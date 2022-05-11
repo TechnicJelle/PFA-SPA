@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { mdiAtom, mdiBookshelf, mdiMolecule, mdiSchool } from '@mdi/js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import FeatureCard from './components/FeatureCard';
+
+
+export default class App extends React.Component {
+    render() {
+        return(
+            <div className="app">
+                <section className="section is-large has-text-centered ">
+                    <h1 className="title">Features</h1>
+                    <div className="container columns">
+                        <FeatureCard className="column" icon={mdiBookshelf} title="Physics" description="Not only are physics implemented into our game, physics are also the basis for our game."/>
+                        <FeatureCard className="column" icon={mdiMolecule} title="Catoms and Molecats" description="Cat themed atoms and molecules turn them into catoms and molecats, now I call that molecute." />
+                        <FeatureCard className="column" icon={mdiAtom} title="Collision Theory" description="Collide catoms into each other to create all molecats." />
+                        <FeatureCard className="column" icon={mdiSchool} title="Educational" description="The game is also educational, teaching the player what some common molecules are made out of." />
+                    </div>
+                </section>
+
+                <section className="is-large has-text-centered">
+                    <h1 className="title">Meet the team</h1>
+                </section>
+            </div>
+        )
+    }
 }
-
-export default App;
