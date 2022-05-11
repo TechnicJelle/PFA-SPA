@@ -32,9 +32,6 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Test project
-      run: npm test --passWithNoTests
-
     - name: Build the web app
       run: npm run build
   
