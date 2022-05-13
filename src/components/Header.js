@@ -29,16 +29,16 @@ export default class Header extends React.Component {
 
                             <div id="navbarMenu" className="navbar-menu">
                                 <div className="navbar-end">
-                                    <a href="/" className="navbar-item active">Merch</a>
-                                    <a href="/" className="navbar-item">Blog</a>
-                                    <a href="/" className="navbar-item">Forum</a>
+                                    <a href="/PFA-SPA" className="navbar-item active">Merch</a>
+                                    <a href="/PFA-SPA" className="navbar-item">Blog</a>
+                                    <a href="/PFA-SPA" className="navbar-item">Forum</a>
                                     <span className="navbar-item">
-                                        <button className="button is-success is-inverted">
+                                        <a target="_blank" href="https://github.com/MythicalSora/Project-Final-Approach/releases/download/v0.1/PFA-Molecats.zip" className="button is-success is-inverted">
                                             <span className="icon">
                                                 <Icon path={mdiDownload}/>
                                             </span>
                                             <span>Download</span>
-                                        </button>
+                                        </a>
                                     </span>
                                 </div>
                             </div>
