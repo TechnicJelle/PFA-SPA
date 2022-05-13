@@ -3,7 +3,7 @@ import { mdiAtom, mdiBookshelf, mdiMolecule, mdiSchool } from '@mdi/js';
 
 import FeatureCard from './components/FeatureCard';
 import TeamModal from './components/Team/Modal';
-import video from './assets/_1.webm';
+import video from './assets/test.webm';
 
 
 export default class App extends React.Component {
