@@ -2,9 +2,14 @@ import React from 'react';
 import { mdiAtom, mdiBookshelf, mdiMolecule, mdiSchool } from '@mdi/js';
 
 import FeatureCard from './components/FeatureCard';
+import TeamModal from './components/Team/Modal';
 
 
 export default class App extends React.Component {
+    toggleModal() {
+        document.getElementById("modal").classList.toggle('is-active')
+    }
+
     render() {
         return(
             <div className="app">
@@ -18,8 +23,9 @@ export default class App extends React.Component {
                     </div>
                 </section>
 
-                <section className="is-large has-text-centered">
+                <section className="is-large has-text-centered" id="team">
                     <h1 className="title">Meet the team</h1>
+                    <TeamModal />
                 </section>
             </div>
         )
