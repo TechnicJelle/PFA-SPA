@@ -33,7 +33,7 @@ export default class Header extends React.Component {
                                     <a href="/PFA-SPA" className="navbar-item">Blog</a>
                                     <a href="/PFA-SPA" className="navbar-item">Forum</a>
                                     <span className="navbar-item">
-                                        <a target="_blank" rel="noreferrer" href="https://github.com/MythicalSora/Project-Final-Approach/releases/download/v0.1/PFA-Molecats.zip" className="button is-success is-inverted">
+                                        <a target="_blank" rel="noreferrer" href="https://github.com/TechnicJelle/Project-Final-Approach/releases/download/v0.1/PFA-Molecats.zip" className="button is-success is-inverted">
                                             <span className="icon">
                                                 <Icon path={mdiDownload}/>
                                             </span>
